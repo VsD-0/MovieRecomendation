@@ -1,0 +1,24 @@
+<div class="top10Container">
+  <div style="display: flex; flex-direction: row; justify-items: center;">
+    <p>
+      <mat-form-field appearance="outline">
+        <mat-label>ID пользователя</mat-label>
+        <input matInput type="text" [(ngModel)]="userId" placeholder="Введите ID пользователя">
+        <mat-hint>ID пользователя</mat-hint>
+      </mat-form-field>
+
+      <button mat-flat-button color="accent" (click)="refreshUser()">Получить рекомендации</button>
+      <button mat-flat-button color="accent" (click)="refresh()">Обновить для текущего</button>
+    </p>
+
+
+  </div>
+
+  @for(movie of films; track movie.title)
+  {
+  <app-movie-item [movie] = "movie"></app-movie-item>
+  }
+  @empty {
+  Empty list of users
+  }
+</div>

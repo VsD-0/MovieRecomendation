@@ -1,0 +1,16 @@
+
+
+<div class="mainContainer">
+
+  <div class="mainPageContainer">
+    <h1><strong>Recommendation system for films</strong>
+  </h1>
+      <mat-button-toggle-group name="fontStyle"  aria-label="Font Style">
+        <mat-button-toggle routerLink="/top10-page" checked = "true"  value="top10">Топ 10 лучших фильмов</mat-button-toggle>
+        <mat-button-toggle routerLink="/genres-recommendation-page" value="byGenre">Рекомендации по жанру</mat-button-toggle>
+        <mat-button-toggle routerLink="/user-id-recommendation-page" value="byUser">Рекомендации по контенту</mat-button-toggle>
+      </mat-button-toggle-group>
+  </div>
+
+  <router-outlet></router-outlet>
+</div>

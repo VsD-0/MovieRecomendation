@@ -1,0 +1,11 @@
+<div class="top10Container">
+  @for(movie of films; track movie.title)
+  {
+  <app-movie-item [movie] = "movie"></app-movie-item>
+  }
+  @empty {
+  Empty list of users
+  }
+</div>
+
+

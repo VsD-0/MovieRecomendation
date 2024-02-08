@@ -1,0 +1,17 @@
+
+h1{
+  text-align: center;
+}
+.mainContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+mat-button-toggle-group{
+
+}
+mat-button-toggle{
+  width: 20vw;
+  min-width: 260px;
+  padding-right: 10px;
+}
